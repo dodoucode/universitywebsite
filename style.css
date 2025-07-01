@@ -374,9 +374,10 @@ height:3.5em;
     .testimonials h1{
                 font-size: 2em;
     }
-    .testimonial-col p {
-        padding: 15px;
-    }
+    .testimonial-col p{
+    padding: 15px;
+    margin-left: 0.7em;
+}
     
 }
 .cta{
