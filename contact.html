@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>University Website Design</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <section class="subheader">
+    <nav>
+        
+      <a href="index.html"><img src="Images/L1_prev_ui.png" alt="University Logo"></a>
+        <a href="index.html" class="a"><span class="r">U</span><span class="b">T</span><span class="g">G</span></a>
+      <div class="nav-links" id="navLinks">
+        <i class="fa fa-times" onclick="hideMenu()"></i>
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="program.html">PROGRAMS</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
+          <li><a href="blog.html">BLOG</a></li>
+        </ul>
+      </div>
+      <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <h1>Contact Us</h1>
+    
+  </section>
+
+<section class="location">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3883.650394848223!2d-16.535684525944756!3d13.247243108777148!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xee81de45202bf55%3A0x3e7ed5959dbf64dc!2sUniversity%20of%20the%20Gambia%2C%20Faraba%20Campus!5e0!3m2!1sen!2sgm!4v1751359512289!5m2!1sen!2sgm" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+     referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+</section>
+
+<section class="contact-us">
+
+    <div class="row">
+        <div class="contact-col">
+            <div>
+                <i class="fa fa-home"></i>
+                <span>
+                    <h5>Address</h5>
+                    <p>UTG, Faraba Campus, The Gambia</p>
+                </span>
+            </div>
+            <div>
+                <i class="fa fa-phone"></i>
+                <span>
+                    <h5> (+220) 3739724 / 3739813</h5>
+                    <p> Monday-Saturday, 10AM-4PM</p>
+                </span>
+        </div>
+            <div>
+                <i class="fa fa-envelope"></i>
+                <span>
+                    <h5>Email: info@utg.edu.gm</h5>
+                    <p> Email Us</p>
+    </div>
+    </div>
+        <div class="contact-col">
+            <form action="" method="post" id="contactForm">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <input type="text" name="subject" placeholder="Subject" required>
+                <textarea rows="5" name="message" placeholder="Your Message" required></textarea>
+                <button type="submit" class="about-btn hero-btn">Send Message</button>
+            </form>
+           
+        </div>
+        <!-- Custom Popup -->
+<div id="messagePopup" class="popup">
+    <div class="popup-content">
+        <p>Message sent.</p>
+    </div>
+    </div>
+</section>
+
+
+    <!-- footer -->
+         <section class="footer">
+            <h4>Follow Us</h4>
+            <p>We are committed to providing quality education and fostering a supportive learning environment for all students.</p>
+            <div class="icons">
+                <a href="https://www.facebook.com/utg.gambia" target="_blank" rel="noopener"><i class="fa fa-facebook"></i></a>
+                <a href="https://www.x.com/@UniOfGambia" target="_blank" rel="noopener"><i class="fa fa-twitter"></i></a>
+                <a href="https://www.instagram.com/@universityofthegambia" target="_blank" rel="noopener"><i class="fa fa-instagram"></i></a>
+                <a href="https://gm.linkedin.com/school/university-of-the-gambia" target="_blank" rel="noopener"><i class="fa fa-linkedin"></i></a>
+            </div>
+            <small>&copy; 2025 University Website Design By Nying. All rights reserved.</small>
+         </section>
+                    
+                
+
+  <section class="footer"></section>
+  <!-- JavaScript for Toggle Menu -->
+   <script>
+    function showMenu() {
+      document.getElementById("navLinks").style.right = "0";
+    }
+
+    function hideMenu() {
+      document.getElementById("navLinks").style.right = "-200px";
+    }
+
+
+
+ document.getElementById("contactForm").addEventListener("submit", function (e) {
+    e.preventDefault(); // Stop actual form submission (for now)
+    
+    // Show custom popup
+    const popup = document.getElementById("messagePopup");
+    popup.classList.add("show");
+
+    // Optional: clear form fields
+    this.reset();
+
+    // Hide popup after a few seconds (handled by CSS animation)
+    setTimeout(() => {
+        popup.classList.remove("show");
+    }, 4000); // match with fadeOut animation duration
+});
+   </script>
+</body>
+</html>

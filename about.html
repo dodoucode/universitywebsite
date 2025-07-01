@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>University Website Design</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <section class="subheader">
+    <nav>
+      <a href="index.html"><img src="Images/L1_prev_ui.png" alt="University Logo"></a>
+        <a href="index.html" class="a"><span class="r">U</span><span class="b">T</span><span class="g">G</span></a>
+      <div class="nav-links" id="navLinks">
+        <i class="fa fa-times" onclick="hideMenu()"></i>
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="program.html">PROGRAMS</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
+          <li><a href="blog.html">BLOG</a></li>
+        </ul>
+      </div>
+      <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <h1>About Us</h1>
+    
+  </section>
+
+  <!-- about us content -->
+   <section class="aboutUs">
+
+    <div class="row">
+        <div class="aboutCol">
+            <h1>Best University In The Gambia</h1>
+            <p>At the University of The Gambia, we believe in the power of education to transform lives and communities. We strive to create a diverse and inclusive environment where students can thrive and reach their full potential.
+            Join us in our mission to empower the next generation of leaders and innovators. Together, we can make a difference in the world.</p>
+<a href="" class="about-btn hero-btn">Enroll Now</a>
+        </div>
+        <div class="aboutCol">
+<img src="images/about.jpg" alt="About Us Images">
+        </div>
+    </div>
+   </section>
+ 
+
+        <!-- footer -->
+         <section class="footer">
+            <h4>Follow Us</h4>
+            <p>We are committed to providing quality education and fostering a supportive learning environment for all students.</p>
+            <div class="icons">
+                <a href="https://www.facebook.com/utg.gambia" target="_blank" rel="noopener"><i class="fa fa-facebook"></i></a>
+                <a href="https://www.x.com/@UniOfGambia" target="_blank" rel="noopener"><i class="fa fa-twitter"></i></a>
+                <a href="https://www.instagram.com/@universityofthegambia" target="_blank" rel="noopener"><i class="fa fa-instagram"></i></a>
+                <a href="https://gm.linkedin.com/school/university-of-the-gambia" target="_blank" rel="noopener"><i class="fa fa-linkedin"></i></a>
+            </div>
+            <small>&copy; 2025 University Website Design By Nying. All rights reserved.</small>
+         </section>
+                    
+                
+
+  <section class="footer"></section>
+  <!-- JavaScript for Toggle Menu -->
+   <script>
+    function showMenu() {
+      document.getElementById("navLinks").style.right = "0";
+    }
+
+    function hideMenu() {
+      document.getElementById("navLinks").style.right = "-200px";
+    }
+   </script>
+</body>
+</html>

@@ -1,0 +1,154 @@
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>University Website Design</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  
+  
+  
+  <section class="subheader">
+    <nav>
+      <a href="index.html"><img src="Images/L1_prev_ui.png" alt="University Logo"></a>
+        <a href="index.html" class="a"><span class="r">U</span><span class="b">T</span><span class="g">G</span></a>
+      <div class="nav-links" id="navLinks">
+        <i class="fa fa-times" onclick="hideMenu()"></i>
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="program.html">PROGRAMS</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
+          <li><a href="blog.html">BLOG</a></li>
+        </ul>
+      </div>
+      <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <h1>Our Certificates & Online Programs</h1>
+    
+  </section>
+
+  <section class="blog-content">
+
+    <div class="row">
+
+        <div class="blog-left">
+            <img src="images/online.jpg" alt="blog image">
+            <h2>Our Certificates & Online Programs</h2>
+            <p>At the University of The Gambia, we offer a range of certificates and online programs designed to enhance your skills and knowledge. Our programs are flexible, allowing you to learn at your own pace while balancing your personal and professional commitments.</p>
+            <brr>
+            <p>Whether you're looking to upskill in your current field or explore new areas of interest, our online courses provide high-quality education from experienced instructors. From business and technology to arts and sciences, we have a program that suits your needs.</p>
+            <br>
+            <p>Join our community of learners and take the next step in your educational journey. With our user-friendly online platform, you can access course materials, participate in discussions, and complete assignments from anywhere in the world.</p>
+            <br>
+            <p>Enroll today and earn a certificate that showcases your commitment to lifelong learning and professional development. Our online programs are designed to equip you with the skills and knowledge needed to succeed in today's competitive job market.</p>
+            <br>
+            <p>For more information about our certificates and online programs, please visit our website or contact our admissions team. We are here to help you achieve your educational goals and unlock new opportunities for your future.</p>
+            <br>
+            <p>Thank you for considering the University of The Gambia for your educational journey. We look forward to welcoming you to our online learning community.</p>
+            <br>
+
+            <div class="comment-box">
+                <h3>Leave a Comment</h3>
+                <form class="form-comment" id="commentForm">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <textarea row="5" placeholder="Your Comment" required></textarea>
+                    <button type="submit" class="about-btn hero-btn">Submit</button>
+                </form>
+               
+            </div>
+                  <!-- Custom Popup -->
+<div id="messagePopup" class="popup">
+    <div class="popup-content">
+        <p>Comment sent.</p>
+    </div>
+    </div>
+        </div>
+        <div class="blog-right">
+            <h3>Post Categories</h3>
+
+            <div>
+                <span>Data Science</span>
+                <span>21</span>
+            </div>
+            <div>
+                <span>Business Anaytics</span>
+                <span>28</span>
+            </div>
+            <div>
+                <span>MAchine Learning</span>
+                <span>15</span>
+            </div>
+            <div>
+                <span>Computer Science</span>
+                <span>34</span>
+            </div>
+            <div>
+                <span>Information Systems</span>
+                <span>21</span>
+            </div>
+            <div>
+                <span>Art & Science</span>
+                <span>27</span>
+            </div>
+            <div>
+                <span>Agriculture</span>
+                <span>40</span>
+            </div>
+        </div>
+    </div>
+  </section>
+
+     <!-- footer -->
+         <section class="footer">
+            <h4>Follow Us</h4>
+            <p>We are committed to providing quality education and fostering a supportive learning environment for all students.</p>
+            <div class="icons">
+                <a href="https://www.facebook.com/utg.gambia" target="_blank" rel="noopener"><i class="fa fa-facebook"></i></a>
+                <a href="https://www.x.com/@UniOfGambia" target="_blank" rel="noopener"><i class="fa fa-twitter"></i></a>
+                <a href="https://www.instagram.com/@universityofthegambia" target="_blank" rel="noopener"><i class="fa fa-instagram"></i></a>
+                <a href="https://gm.linkedin.com/school/university-of-the-gambia" target="_blank" rel="noopener"><i class="fa fa-linkedin"></i></a>
+            </div>
+            <small>&copy; 2025 University Website Design By Nying. All rights reserved.</small>
+         </section>
+                    
+                
+
+  <section class="footer"></section>
+  <!-- JavaScript for Toggle Menu -->
+   <script>
+    function showMenu() {
+      document.getElementById("navLinks").style.right = "0";
+    }
+
+    function hideMenu() {
+      document.getElementById("navLinks").style.right = "-200px";
+    }
+
+
+
+    document.getElementById("commentForm").addEventListener("submit", function (e) {
+    e.preventDefault(); // Stop actual form submission (for now)
+    
+    // Show custom popup
+    const popup = document.getElementById("messagePopup");
+    popup.classList.add("show");
+
+    // Optional: clear form fields
+    this.reset();
+
+    // Hide popup after a few seconds (handled by CSS animation)
+    setTimeout(() => {
+        popup.classList.remove("show");
+    }, 4000); // match with fadeOut animation duration
+});
+   </script>
+</body>
+</html>
